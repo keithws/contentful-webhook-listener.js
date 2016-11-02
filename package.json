@@ -1,0 +1,31 @@
+{
+  "name": "contentful-webhook-listener",
+  "version": "1.0.0",
+  "description": "A Simple HTTP Webserver with pluggable behavior for listening to Contentful API Webhooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithws/contentful-webhook-listener.js.git"
+  },
+  "keywords": [
+    "contentful",
+    "webhook",
+    "listener",
+    "server",
+    "web",
+    "hook",
+    "listening",
+    "api",
+    "contentful-webhook",
+    "webhook-listener"
+  ],
+  "author": "Keith W. Shaw <keith.w.shaw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keithws/contentful-webhook-listener.js/issues"
+  },
+  "homepage": "https://github.com/keithws/contentful-webhook-listener.js#readme"
+}
