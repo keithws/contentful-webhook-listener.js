@@ -155,7 +155,12 @@ The payload has the following properties for the `unpublish` and `delete` events
 
 ## Change Log
 
-_1.0.0 — September 11, 2015_
+_1.0.1 — November 3, 2016_
+
+* fixed npm badge in readme
+* fixed date of first release in change log
+
+_1.0.0 — November 3, 2016_
 
 * initial version
 * provides functionality similar the [Contentful Webhook Listener][3] but with Node.js instead of Ruby
