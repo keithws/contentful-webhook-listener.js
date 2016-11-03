@@ -74,11 +74,11 @@ The payload returned has the following properties for the `create`, `save`, `aut
 	"space": "cfexampleapi",
 	"sys": {
 		"space": {
-			"sys": { ... }
+			"sys": { }
 		},
 		"type": "Entry",
 		"contentType": {
-			"sys": { ... }
+			"sys": { }
 		},
 		"id": "cat_nyancat",
 		"revision": 1,
@@ -94,24 +94,24 @@ The payload has the following properties for the `unpublish` and `delete` events
 ```json
 {
 	"contentType": "cat",
-	"fields": undefined,
+	"fields": null,
 	"id": "cat_nyancat",
 	"kind": "Entry",
 	"origin": "ContentManagement",
 	"space": "cfexampleapi",
 	"sys": {
 		"space": {
-			"sys": { ... }
+			"sys": { }
 		},
 		"type": "DeletedEntry",
 		"contentType": {
-			"sys": { ... }
-		}
+			"sys": { }
+		},
 		"id": "cat_nyancat",
 		"revision": 2,
 		"createdAt": "2016-11-03T03:10:55.676Z",
 		"updatedAt": "2016-11-03T03:10:55.676Z",
-		"deletedAt": "2016-11-03T03:10:55.676Z",
+		"deletedAt": "2016-11-03T03:10:55.676Z"
 	},
 	"webhookName": "localhost"
 }
@@ -119,7 +119,7 @@ The payload has the following properties for the `unpublish` and `delete` events
 
 ## Todo
 
-* add a command line interface?
+* add a command line interface
 
 ## Change Log
 
