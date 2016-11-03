@@ -1,6 +1,6 @@
 # Contentful Webhook Listener
 
-[![Build Status](https://travis-ci.org/keithws/contentful-webhook-listener.js.svg?branch=master)](https://travis-ci.org/keithws/contentful-webhook-listener.js) [![NPM Dependency Status](https://david-dm.org/keithws/contentful-webhook-listener.js.svg)](https://david-dm.org/keithws/contentful-webhook-listener.js) [![NPM Verion](https://img.shields.io/npm/v/contentful-webhook-listener.js.svg)](https://www.npmjs.com/package/contentful-webhook-listener.js)
+[![Build Status](https://travis-ci.org/keithws/contentful-webhook-listener.js.svg?branch=master)](https://travis-ci.org/keithws/contentful-webhook-listener.js) [![NPM Dependency Status](https://david-dm.org/keithws/contentful-webhook-listener.js.svg)](https://david-dm.org/keithws/contentful-webhook-listener.js) [![NPM Verion](https://img.shields.io/npm/v/contentful-webhook-listener.svg)](https://www.npmjs.com/package/contentful-webhook-listener)
 
 
 A Simple HTTP Webserver for listening to Contentful API Webhooks with JavaScript. This uses Node.js to create a web server and then emits events for each action (create, save, autoSave, etc) that occurs in Contentful.
