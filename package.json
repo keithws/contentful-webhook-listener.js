@@ -1,7 +1,7 @@
 {
   "name": "contentful-webhook-listener",
   "version": "1.0.0",
-  "description": "A Simple HTTP Webserver with pluggable behavior for listening to Contentful API Webhooks",
+  "description": "A Simple HTTP Webserver for listening to Contentful API Webhooks with JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js"
