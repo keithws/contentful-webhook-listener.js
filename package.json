@@ -4,7 +4,7 @@
   "description": "A Simple HTTP Webserver with pluggable behavior for listening to Contentful API Webhooks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/keithws/contentful-webhook-listener.js/issues"
   },
-  "homepage": "https://github.com/keithws/contentful-webhook-listener.js#readme"
+  "homepage": "https://github.com/keithws/contentful-webhook-listener.js#readme",
+  "devDependencies": {
+    "eslint": "^3.9.1"
+  }
 }
