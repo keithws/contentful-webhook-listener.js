@@ -31,6 +31,34 @@ webhook.on("publish", function (payload) {
 webhook.listen(port);
 ```
 
+`listener` extends the `http` module, so all the methods, properties, and events from the `http` module are available on the `listener` module.
+
+`createServer()` accepts a options argument in addition to the standard requestListener function. The options argument accepts a `auth` property which will enable and enforce HTTP Basic Authentication. The `auth` property value should be the username and password in `<username>:<password>` format.
+
+```node
+var listener = require("contentful-webhook-listener");
+var webhook = listener.createServer({
+	"auth": "username:password"
+}, function requestListener (request, response) {
+
+	console.log("request received");
+
+});
+var port = 5000;
+
+webhook.on("publish", function (payload) {
+
+	console.log(payload);
+
+});
+
+webhook.listen(port, function callback () {
+
+	console.log("server is listening");
+
+});
+```
+
 ## Payload Properties
 
 The payload returned has the following properties for the `create`, `save`, `autoSave`, `archive`, `unarchive`, or `publish` events. Sample data from the Contentful API sample space with cats.
