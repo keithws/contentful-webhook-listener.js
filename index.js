@@ -72,7 +72,7 @@ class ContentfulWebhookListener extends httpServer {
 
                     // emit event with webhook object
                     let webhook = {
-                        "contentType": body.sys.contentType.sys.id,
+                        "contentType": body.sys.contentType && body.sys.contentType.sys.id,
                         "fields": body.fields,
                         "id": body.sys.id,
                         "kind": kind,
@@ -86,6 +86,7 @@ class ContentfulWebhookListener extends httpServer {
                 } catch (err) {
 
                     server.emit("error", err);
+                    server.close();
 
                 }
 
