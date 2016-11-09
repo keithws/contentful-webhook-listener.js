@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/keithws/contentful-webhook-listener.js.svg?branch=master)](https://travis-ci.org/keithws/contentful-webhook-listener.js) [![NPM Dependency Status](https://david-dm.org/keithws/contentful-webhook-listener.js.svg)](https://david-dm.org/keithws/contentful-webhook-listener.js) [![NPM Verion](https://img.shields.io/npm/v/contentful-webhook-listener.svg)](https://www.npmjs.com/package/contentful-webhook-listener)
 
-A Simple HTTP Webserver for listening to Contentful API Webhooks with JavaScript. This uses Node.js to create a web server and then emits events for each action (create, save, autoSave, etc) that occurs in Contentful.
+An HTTP server for listening to Contentful API Webhooks with JavaScript. This provides a Node.js module to create a web server and then emits events for each action (create, save, autoSave, etc) that occurs in Contentful.
 
 > [Contentful][4] is a content management platform for web applications, mobile apps and connected devices. It allows you to create, edit & manage content in the cloud and publish it anywhere via powerful API. Contentful offers tools for managing editorial teams and enabling cooperation between organizations.
 
@@ -10,9 +10,11 @@ A Simple HTTP Webserver for listening to Contentful API Webhooks with JavaScript
 
 Setup a custom callback that executes on-demand and it will receive the latest version of the Entry, Asset, or Content Type for each `create`, `save`, `autoSave`, `archive`, `unarchive`, or `publish` event in Contentful. The `unpublish` and `delete` events in Contentful send a DeletedEntry or DeletedAsset payload.
 
-See the [Contentful Content Management API][2] documentation for more details webhooks.
+See the [Contentful Content Management API][2] documentation for more details on their webhooks.
 
-Pair this with [ngork][5] for local development that responds to actions in Contentful or consider the [contentful-webhook-tunnel][6] module which automates the whole process.
+Pair this with [ngork][5] for local development, or a server behind a firewall, that responds to actions in Contentful or consider the [contentful-webhook-tunnel][6] module which automates the whole process.
+
+If you are looking for a ruby gem with similar functionality, check out [contentful-webhook-listener](https://github.com/contentful/contentful-webhook-listener.rb).
 
 ## Install
 
