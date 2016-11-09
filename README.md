@@ -156,6 +156,11 @@ The payload has the following properties for the `unpublish` and `delete` events
 
 ## Change Log
 
+_1.0.2 — November 8, 2016_
+
+* closer server after emitting an error
+* only set contentType when contentType is available
+
 _1.0.1 — November 3, 2016_
 
 * fixed npm badge in readme

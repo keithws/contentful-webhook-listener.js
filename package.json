@@ -1,6 +1,6 @@
 {
   "name": "contentful-webhook-listener",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Simple HTTP Webserver for listening to Contentful API Webhooks with JavaScript",
   "main": "index.js",
   "scripts": {
