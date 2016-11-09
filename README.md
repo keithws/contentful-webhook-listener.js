@@ -2,16 +2,17 @@
 
 [![Build Status](https://travis-ci.org/keithws/contentful-webhook-listener.js.svg?branch=master)](https://travis-ci.org/keithws/contentful-webhook-listener.js) [![NPM Dependency Status](https://david-dm.org/keithws/contentful-webhook-listener.js.svg)](https://david-dm.org/keithws/contentful-webhook-listener.js) [![NPM Verion](https://img.shields.io/npm/v/contentful-webhook-listener.svg)](https://www.npmjs.com/package/contentful-webhook-listener)
 
-
 A Simple HTTP Webserver for listening to Contentful API Webhooks with JavaScript. This uses Node.js to create a web server and then emits events for each action (create, save, autoSave, etc) that occurs in Contentful.
 
 > [Contentful][4] is a content management platform for web applications, mobile apps and connected devices. It allows you to create, edit & manage content in the cloud and publish it anywhere via powerful API. Contentful offers tools for managing editorial teams and enabling cooperation between organizations.
 
 > Webhooks in Contentful can notify you or someone else when content has changed by calling a preconfigured HTTP endpoint. This can be used for notifications, static site generators or other forms of post-processing sourced from Contentful.
 
-Setup a custom callback the execute on-demand and it will receive the latest version of the Entry, Asset, or Content Type for each `create`, `save`, `autoSave`, `archive`, `unarchive`, or `publish` event in Contentful. The `unpublish` and `delete` events in Contentful send a DeletedEntry or DeletedAsset payload.
+Setup a custom callback that executes on-demand and it will receive the latest version of the Entry, Asset, or Content Type for each `create`, `save`, `autoSave`, `archive`, `unarchive`, or `publish` event in Contentful. The `unpublish` and `delete` events in Contentful send a DeletedEntry or DeletedAsset payload.
 
 See the [Contentful Content Management API][2] documentation for more details webhooks.
+
+Pair this with [ngork][5] for local development that responds to actions in Contentful or consider the [contentful-webhook-tunnel][6] module which automates the whole process.
 
 ## Install
 
@@ -176,3 +177,5 @@ contentful-webhook-listener.js is available under the [MIT License][1].
 [2]:  https://www.contentful.com/developers/docs/references/content-management-api/#/reference/webhooks/create/update-a-webhook
 [3]: https://github.com/contentful/contentful-webhook-listener.rb
 [4]: http://www.contentful.com/
+[5]: https://ngrok.com
+[6]: https://github.com/keithws/contentful-webhook-tunnel
