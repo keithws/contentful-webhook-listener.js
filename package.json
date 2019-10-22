@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/keithws/contentful-webhook-listener.js#readme",
   "devDependencies": {
-    "eslint": "^3.9.1"
+    "eslint": "^6.5.1"
   }
 }
