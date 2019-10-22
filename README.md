@@ -156,7 +156,11 @@ The payload has the following properties for the `unpublish` and `delete` events
 
 * add a command line interface
 
-## Change Log
+## Changelog
+
+_1.0.3 — October 22, 2019_
+
+* upgrade all dependencies
 
 _1.0.2 — November 8, 2016_
 
