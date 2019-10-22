@@ -158,6 +158,10 @@ The payload has the following properties for the `unpublish` and `delete` events
 
 ## Changelog
 
+_1.0.4 — October 22, 2019_
+
+* added `files` to package.json so only necessary files are included in npm tarball
+
 _1.0.3 — October 22, 2019_
 
 * upgrade all dependencies
